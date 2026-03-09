@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard | Secure Hire AI</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/darkmode.css">
 
-  <!-- Icons -->
+  <!-- icon-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+  <!-- navbar-->
   <header class="navbar">
     <div class="logo">SecureHire<span>AI</span></div>
     <nav>
@@ -27,7 +26,7 @@
     </nav>
   </header>
 
-  <!-- ================= DASHBOARD SECTION ================= -->
+  <!--dashboard section -->
   <section class="dashboard-hero">
     <canvas id="particles"></canvas>
     
@@ -35,7 +34,7 @@
       <h1 class="glitch-text">Welcome to Your Dashboard 👋</h1>
       <p class="subtitle">Upload resume, select domain, and prepare to get hired.</p>
 
-    <!-- ================= RESUME UPLOAD ================= -->
+    <!-- resume upload -->
     <div class="dashboard-card">
       <h2><i class="fa fa-file-upload"></i> Upload Resume</h2>
       <p>Your resume will be scanned to generate personalized questions</p>
@@ -45,7 +44,7 @@
     </div>
     <div id="toast" class="toast"></div>
 
-    <!-- ================= RECOMMENDED DOMAINS (Hidden by default) ================= -->
+    <!-- recommendation (hidden by default) -->
     <div id="recommendedSection" class="dashboard-card" style="display: none;">
       <div class="card-header">
         <span class="badge">AI MATCH</span>
@@ -53,11 +52,11 @@
         <p>Based on your scanned resume, these domains fit your skills perfectly.</p>
       </div>
       <div id="recommendedGrid" class="domain-grid">
-        <!-- populated via JS -->
+     
       </div>
     </div>
 
-    <!-- ================= ALL DOMAINS SELECTION ================= -->
+    <!--domain section -->
     <div class="dashboard-card">
       <div class="card-header">
         <h2><i class="fa fa-compass"></i> Explore All Domains</h2>
@@ -65,7 +64,7 @@
       </div>
 
       <div class="domain-grid">
-        <!-- TECH DOMAINS -->
+        <!-- tech -->
         <div class="domain-card" onclick="startInterview('B.Tech CSE / IT')">
           <div class="icon-box"><i class="fa fa-laptop-code"></i></div>
           <h3>B.Tech CSE / IT</h3>
@@ -91,7 +90,7 @@
           <h3>Core Engineering</h3>
         </div>
 
-        <!-- NON-TECH DOMAINS -->
+        <!-- non-tech -->
         <div class="domain-card" onclick="startInterview('MBA / BBA')">
           <div class="icon-box"><i class="fa fa-briefcase"></i></div>
           <h3>MBA / BBA</h3>
@@ -108,7 +107,7 @@
         </div>
       </div>
 
-      <!-- START BUTTON CONTAINER -->
+      <!-- start button -->
       <div id="startInterviewContainer" class="start-container" style="display: none;">
         <button id="finalStartBtn" class="btn btn-large">
           <i class="fa fa-play"></i> Start Interview Session
@@ -116,7 +115,7 @@
       </div>
     </div>
 
-    <!-- ================= INTERVIEW STATUS ================= -->
+    <!-- interview status-->
     <div class="dashboard-card">
       <h2><i class="fa fa-circle-info"></i> Interview Rules</h2>
       <ul class="rules">
@@ -125,16 +124,16 @@
         <li>⏱️ Real-time AI evaluation & scoring</li>
         <li>📊 Skill-gap analysis & learning recommendations</li>
       </ul>
-      </div> <!-- end dashboard-card for rules -->
-    </div> <!-- end dashboard-content -->
+      </div> 
+    </div> 
   </section>
 
-  <!-- ================= FOOTER ================= -->
+ 
   <footer class="footer">
     <p>© 2026 Secure Hire AI | AI-Based Interview Practice Platform</p>
   </footer>
 
-  <!-- JS -->
+
   <script src="js/darkmode.js"></script>
   <script src="js/main.js"></script>
 
