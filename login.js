@@ -20,7 +20,7 @@ loginForm.addEventListener("submit", function (e) {
         return;
     }
 
-    // ✅ Success
+    // Success
     showToast("✅ Login successful! Redirecting...", "success");
     redirectToDashboard();
 });
@@ -46,7 +46,7 @@ function clearErrors() {
     });
 }
 
-/* ================= REDIRECT ================= */
+/* redirect */
 
 function redirectToDashboard() {
     setTimeout(() => {
